@@ -1,30 +1,57 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/style.min.css">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <title>Pink</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <title>Pink</title>
 </head>
 <body>
 <div class="container">
-    <header class="page-header">
+  <header class="page-header">
+    <a class="page-header__logo" href="#">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/Pink-logo-3@1x.png, img/Pink-logo-3@2x.png 2x">
+        <source media="(min-width: 700px)" srcset="img/Pink-logo-2@1x.png 145w, img/Pink-logo-2@2x.png 2x">
+        <img class="page-header__logo-img" src="img/Pink-logo-1.png"  alt="Pink">
+      </picture>
+    </a>
+    <nav class="page-nav">
+      <ul class="page-nav__list">
+        <li><a href="#">Информация</a></li>
+        <li><a href="#">Возможности</a></li>
+        <li><a href="#">Отзывы</a></li>
+        <li><a href="#">Стоимость</a></li>
+      </ul>
+    </nav>
+    <button class="page-header__collapse" type="button">
+      <svg class="page-header__burger">
+        <use xlink:href="#menu-burger" data-img="img/menu-burger.png"></use>
+      </svg>
+      <noscript><img class="page-header__burger" src="img/menu-burger.png" width="50"
+                     height="24" alt="form-logo-triangle"/></noscript>
+      <svg class="page-header__cross page-header__cross--hide-menu-js">
+        <use xlink:href="#menu-cross" data-img="img/menu-cross.png"></use>
+      </svg>
+      <noscript><img class="page-header__cross" src="img/menu-cross.png" width="23"
+                     height="22" alt="form-logo-triangle"/></noscript>
+    </button>
+  </header>
 
 
-    </header>
+  <main class="page-main">
 
 
-    <main class="page-main">
+  </main>
 
 
-    </main>
+  <footer class="page-footer">
 
 
-    <footer class="page-footer">
-
-
-    </footer>
+  </footer>
 </div>
+<script src="js/script.min.js"></script>
 </body>
 </html>

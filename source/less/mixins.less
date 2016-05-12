@@ -1,0 +1,26 @@
+.links (@link, @visited, @hover, @active) {
+  & {
+    color: @link;
+    &:visited {
+      color: @visited;
+    }
+    &:hover {
+      color: @hover;
+    }
+    &:active, &:focus {
+      color: @active;
+    }
+  }
+}
+
+.svg (@fill, @hover, @active) {
+  & {
+    fill: @fill;
+    &:hover {
+      color: @hover;
+    }
+    &:active, &:focus {
+      color: @active;
+    }
+  }
+}

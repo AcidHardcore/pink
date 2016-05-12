@@ -32,7 +32,7 @@ const isDev = !process.env.NODE_ENV || process.env.NODE_ENV == 'dev';
 //Less comb
 gulp.task('comb', function () {
     console.log('---------- LESS combing');
-    return gulp.src('./source/less/*.less', {since: gulp.lastRun('comb')}) // only  files were change
+    return gulp.src('./source/less/blocks/*.less', {since: gulp.lastRun('comb')}) // only  files were change
         .pipe(csscomb())
         .pipe(debug({title: "cssComb:"}))
         .pipe(gulp.dest('./source/less/blocks/'))
