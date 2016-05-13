@@ -16,10 +16,17 @@
           </mappings>
         </serverdata>
       </paths>
+      <paths name="pink.makeevka.com">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/" local="$PROJECT_DIR$/build" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
       <paths name="vit.makeevka.com">
         <serverdata>
           <mappings>
-            <mapping local="$PROJECT_DIR$" web="/" />
+            <mapping local="$PROJECT_DIR$/../vit/" web="/" />
           </mappings>
         </serverdata>
       </paths>

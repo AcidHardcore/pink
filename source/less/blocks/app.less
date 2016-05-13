@@ -1,7 +1,70 @@
 .app {
   position: relative;
-  margin-top: -66px;
   width: 100%;
   height: 730px;
-  background: @base-color url('../img/background-1@1x.jpg') no-repeat;
+  margin-top: -85px;
+  background-color: @base-color;
+  background-image: url("../img/iphone-hand-1.png"), url("../img/background-1@1x.jpg");
+  background-repeat: no-repeat, no-repeat ;
+  background-position: 0 45.5%, 0 0;
+  text-align: center;
+  &__title {
+    position: absolute;
+    top: 125px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    font-size: 18px;
+    font-weight: 300;
+    color: white;
+  }
+  &__wrapper{
+    width: 320px;
+    height: 272px;
+    top: 488px;
+    background-color: #1d2631;
+    position: relative;
+  }
+  &__download {
+    border: 4px solid white;
+    background-color: transparent;
+    border-radius: 40px;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 15px 35px;
+    margin-top: 28px;
+    margin-bottom: 100px;
+  }
+  &__download:focus {
+    outline: 0;
+  }
+  &__logo-apple {
+    position: absolute;
+    width: 44px;
+    height: 47px;
+    top: 120px;
+    left: 59px;
+  }
+  &__logo-android {
+    position: absolute;
+    width: 44px;
+    height: 47px;
+    top: 120px;
+    left: 138px;
+  }
+  &__logo-microsoft {
+    position: absolute;
+    width:44px;
+    height: 47px;
+    top: 120px;
+    left: 218px;
+  }
+  &__desc {
+    color: white;
+    font-weight: 300;
+    width: 260px;
+    margin: 0 auto;
+  }
 }
