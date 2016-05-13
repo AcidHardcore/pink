@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/style.min.css">
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700&subset=latin,cyrillic' rel='stylesheet'
+        type='text/css'>
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <title>Pink</title>
 </head>
@@ -15,7 +16,7 @@
       <picture>
         <source media="(min-width: 1200px)" srcset="img/Pink-logo-3@1x.png, img/Pink-logo-3@2x.png 2x">
         <source media="(min-width: 700px)" srcset="img/Pink-logo-2@1x.png 145w, img/Pink-logo-2@2x.png 2x">
-        <img class="page-header__logo-img" src="img/Pink-logo-1.png"  alt="Pink">
+        <img class="page-header__logo-img" src="img/Pink-logo-1.png" alt="Pink">
       </picture>
     </a>
     <nav class="page-nav">
@@ -43,24 +44,26 @@
 
   <main class="page-main">
     <section class="app">
-        <h1 class="app__title">Взгляните на жизнь иначе!</h1>
+      <h1 class="app__title">Взгляните на жизнь иначе!</h1>
       <div class="app__wrapper">
         <button class="app__download" type="button">Скачать приложение</button>
-        <svg class="app__logo-apple">
-          <use xlink:href="#apple-logo" data-img="img/apple-logo.png"></use>
-        </svg>
-        <noscript><img class="app__logo-apple" src="img/apple-logo.png" width="46"
-                       height="57" alt="apple-logo"/></noscript>
-        <svg class="app__logo-android">
-          <use xlink:href="#android-logo" data-img="img/android-logo.png"></use>
-        </svg>
-        <noscript><img class="app__logo-android" src="img/android-logo.png" width="42"
-                       height="47" alt="android-logo"/></noscript>
-        <svg class="app__logo-microsoft">
-          <use xlink:href="#microsoft-logo" data-img="img/microsoft-logo.png"></use>
-        </svg>
-        <noscript><img class="app__logo-microsoft" src="img/microsoft-logo.png" width="44"
-                       height="42" alt="microsoft-logo"/></noscript>
+        <div class="app__logo-wrapper">
+          <svg class="app__logo-apple">
+            <use xlink:href="#apple-logo" data-img="img/apple-logo.png"></use>
+          </svg>
+          <noscript><img class="app__logo-apple" src="img/apple-logo.png" width="46"
+                         height="57" alt="apple-logo"/></noscript>
+          <svg class="app__logo-android">
+            <use xlink:href="#android-logo" data-img="img/android-logo.png"></use>
+          </svg>
+          <noscript><img class="app__logo-android" src="img/android-logo.png" width="42"
+                         height="47" alt="android-logo"/></noscript>
+          <svg class="app__logo-microsoft">
+            <use xlink:href="#microsoft-logo" data-img="img/microsoft-logo.png"></use>
+          </svg>
+          <noscript><img class="app__logo-microsoft" src="img/microsoft-logo.png" width="44"
+                         height="42" alt="microsoft-logo"/></noscript>
+        </div>
         <p class="app__desc">Доступно для Iphone, IPAd, Android, Windows phone, Mac OS, Windows 8</p>
       </div>
     </section>
