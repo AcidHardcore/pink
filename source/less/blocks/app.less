@@ -9,9 +9,12 @@
   background-image: url("../img/iphone-hand-1.png"), url("../img/background-1@1x.jpg");
   background-repeat: no-repeat, no-repeat;
   background-position: 0 45.5%, 0 0;
-  background-size: 258px 286px, 700px 730px;
+  background-size: 258px 286px, 100% 730px;
 
   .clearfix();
+  @media (min-width: @screen-xs) and (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+    background-image: url("../img/iphone-hand-1@2x.png"), url("../img/background-1@1x.jpg");
+  }
   @media (min-width: @screen-sm) {
     background-image: url("../img/iphone-hand-1@2x.png"), url("../img/background-1@1x.jpg");
     background-position: 85% 100%, 0 0;
@@ -21,6 +24,7 @@
       background-size: 724px 569px, 100% 730px;
     }
   }
+
   @media (min-width: @screen-md) {
     height: 855px;
     background-image: url("../img/iphone-hand-1@2x.png"), url("../img/background-1@2x.jpg");
@@ -31,6 +35,7 @@
       background-size: 950px 645px, 100% 855px;
     }
   }
+
   @media (min-width: @screen-lg) {
     background-image: url("../img/iphone-hand-1@3x.png"), url("../img/background-1@3x.jpg");
     background-position: 75% 100%, 0 0;
@@ -40,6 +45,7 @@
       background-size: 950px 645px, 100% 855px;
     }
   }
+
   &__title {
     position: absolute;
     top: -445px;
@@ -70,6 +76,7 @@
       line-height: 50px * 1.2;
     }
   }
+
   &__wrapper {
     position: relative;
     top: 488px;
@@ -86,6 +93,7 @@
       left: 129px;
     }
   }
+
   &__download {
     padding: 15px 35px;
     margin-top: 28px;
@@ -102,17 +110,21 @@
       line-height: 21px;
     }
   }
+
   &__download:hover {
     color: @color-pink;
     background-color: white;
   }
+
   &__download:active {
     color: #5d344c;
     background-color: white;
   }
+
   &__download:focus {
     outline: 0;
   }
+
   &__logo-wrapper {
     position: relative;
     width: 205px;
@@ -120,24 +132,28 @@
     margin: 0 auto;
     margin-bottom: 30px;
   }
+
   &__logo-apple {
     position: absolute;
     left: 0;
     width: 44px;
     height: 47px;
   }
+
   &__logo-android {
     position: absolute;
     left: 78px;
     width: 44px;
     height: 47px;
   }
+
   &__logo-microsoft {
     position: absolute;
     left: 159px;
     width: 44px;
     height: 47px;
   }
+
   &__desc {
     width: 260px;
     margin: 0 auto;

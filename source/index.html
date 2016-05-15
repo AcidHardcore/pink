@@ -75,10 +75,12 @@
       <figure class="arrow">
         <div class="arrow__left"></div>
       </figure>
-      <div class="features__wrapper">
+      <div class="row features__wrapper">
         <div class="features__item-wrapper">
           <picture>
-            <img class="feautres__img" src="" alt="">
+            <!--<source media="(min-width: 1200px)" srcset="img/Pink-logo-3@1x.png, img/Pink-logo-3@2x.png 2x">
+            <source media="(min-width: 700px)" srcset="img/Pink-logo-2@1x.png 145w, img/Pink-logo-2@2x.png 2x">-->
+            <img class="hidden-xs hidden-sm features__img" src="img/iphone-screen-1-1@1x.png" alt="screen1">
           </picture>
           <h2 class="features__name">Поднимает настроение</h2>
           <div class="features__desc">Приложение поможет вам победить осеннюю хандру и депрессию буквально в несколько
@@ -87,7 +89,7 @@
         </div>
         <div class="features__item-wrapper">
           <picture>
-            <img class="feautres__img" src="" alt="">
+            <img class="hidden-xs hidden-sm features__img" src="img/iphone-screen-1-2@1x.png" alt="screen2">
           </picture>
           <h2 class="features__name">Меняет мир вокруг вас</h2>
           <div class="features__desc">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить
@@ -96,11 +98,16 @@
         </div>
         <div class="features__item-wrapper">
           <picture>
-            <img class="feautres__img" src="" alt="">
+            <img class="hidden-xs hidden-sm features__img" src="img/iphone-screen-1-3@1x.png" alt="screen3">
           </picture>
           <h2 class="features__name">Заводите новых друзей</h2>
           <div class="features__desc">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых
           </div>
+          <picture>
+            <source media="(min-width: 700px)" srcset="img/iphone-screen-2-3@1x.png, img/iphone-screen-2-3@2x.png 2x">
+            <source media="(min-width: 320px)" srcset="img/iphone-screen-1-3@1x.png, img/iphone-screen-2-3@1x.png 2x">
+            <img class="visible-sm-block  visible-xs-block features__img" src="img/iphone-screen-1-3@1x.png" alt="screen3">
+          </picture>
         </div>
         <div class="hidden-xs features__effect">
           <h2 class="features__name features__name--effect">Эффект на 24 часа</h2>
