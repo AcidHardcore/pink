@@ -8,23 +8,45 @@
 
   &__title {
     margin-bottom: 70px;
+    margin-top: 65px;
     font-size: 24px;
     font-weight: 300;
     line-height: 32px;
     color: @color-menu;
     @media (min-width: @screen-sm) {
       margin-bottom: 100px;
+      margin-top: 60px;
+      font-size: 40px;
+      line-height: 1.2;
+    }
+    @media (min-width: @screen-md) {
+      margin-top: 80px;
+      margin-bottom: 175px;
+      font-size: 50px;
+      line-height: 1.2;
     }
   }
   &__title span:first-child {
-    margin-top: 65px;
     margin-bottom: 35px;
+    @media (min-width: @screen-sm) {
+      margin-bottom: 0;
+      width: 620px;
+    }
+    @media (min-width: @screen-md) {
+      width: 760px;
+    }
   }
   &__title span {
     display: block;
     width: 210px;
     margin-right: auto;
     margin-left: auto;
+    @media (min-width: @screen-sm) {
+      width: 340px;
+    }
+    @media (min-width: @screen-md) {
+      width: 430px;
+    }
   }
   &__wrapper {
     padding-top: 55px;
@@ -44,10 +66,22 @@
     font-size: 18px;
     font-weight: 700;
     line-height: 24px;
+    @media (min-width: @screen-md) {
+      width: 221px;
+      font-size: 30px;
+      line-height: 1.4;
+      margin-top: 60px;
+      margin-bottom: 30px;
+    }
   }
   &__name--effect {
     font-size: 30px;
     line-height: 36px;
+    @media (min-width: @screen-md) {
+      width: 320px;
+      margin-right: 0;
+      margin-left: 0;
+    }
   }
   &__desc {
     width: 275px;
@@ -55,30 +89,58 @@
     margin-bottom: 40px;
     margin-left: auto;
     color: @base-color;
+    @media (min-width: @screen-md) {
+      font-size: 18px;
+      line-height: 1.4;
+      width: 248px;
+    }
   }
   &__desc--effect {
     margin-bottom: 25px;
+    @media (min-width: @screen-md) {
+      width: 550px;
+      margin-right: 0;
+      margin-left: 0;
+    }
   }
   &__link {
     .links(@color-pink, @base-color, #f2f2f2);
     display: block;
     width: 275px;
     margin: 0 auto;
+    @media (min-width: @screen-md) {
+      width: 300px;
+      margin-right: 0;
+      margin-left: 0;
+      font-size: 18px;
+      line-height: 1.2;
+    }
   }
-  &__img {
-    //margin: 0 auto;
-  }
+
   &__wrapper-left {
-    margin-top: -100px;
+    @media (min-width: @screen-sm) {
+        margin-top: -100px;
+
+    }
   }
   &__wrapper-right {
     margin-top: -45px;
+    @media (min-width: @screen-md) {
+      margin-top: -142px;
+    }
+
   }
   &__wrapper-left-second {
     margin-top: 55px;
+    @media (min-width: @screen-md) {
+      margin-top: 35px;
+    }
   }
   &__wrapper-right-second {
     margin-top: 60px;
     text-align: left;
+    @media (min-width: @screen-md) {
+      margin-top: 110px;
+    }
   }
 }
