@@ -2,6 +2,7 @@
 
 .features {
   position: relative;
+  text-align: center;
 
   .clearfix();
 
@@ -11,7 +12,9 @@
     font-weight: 300;
     line-height: 32px;
     color: @color-menu;
-    text-align: center;
+    @media (min-width: @screen-sm) {
+      margin-bottom: 100px;
+    }
   }
   &__title span:first-child {
     margin-top: 65px;
@@ -30,6 +33,9 @@
 
     .clearfix();
   }
+  &__wrapper--second{
+    padding-top: 0;
+  }
   &__name {
     width: 275px;
     margin-right: auto;
@@ -39,14 +45,40 @@
     font-weight: 700;
     line-height: 24px;
   }
+  &__name--effect {
+    font-size: 30px;
+    line-height: 36px;
+  }
   &__desc {
     width: 275px;
     margin-right: auto;
     margin-bottom: 40px;
     margin-left: auto;
-    color: @color-menu;
+    color: @base-color;
+  }
+  &__desc--effect {
+    margin-bottom: 25px;
+  }
+  &__link {
+    .links(@color-pink, @base-color, #f2f2f2);
+    display: block;
+    width: 275px;
+    margin: 0 auto;
   }
   &__img {
-    margin: 0 auto;
+    //margin: 0 auto;
+  }
+  &__wrapper-left {
+    margin-top: -100px;
+  }
+  &__wrapper-right {
+    margin-top: -45px;
+  }
+  &__wrapper-left-second {
+    margin-top: 55px;
+  }
+  &__wrapper-right-second {
+    margin-top: 60px;
+    text-align: left;
   }
 }

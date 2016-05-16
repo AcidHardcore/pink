@@ -1,13 +1,11 @@
-.links (@link, @visited, @hover, @active) {
+.links (@link, @hover, @active) {
   & {
     color: @link;
-    &:visited {
-      color: @visited;
-    }
     &:hover {
       color: @hover;
+      text-decoration: underline;
     }
-    &:active, &:focus {
+    &:active {
       color: @active;
     }
   }
@@ -18,8 +16,9 @@
     fill: @fill;
     &:hover {
       color: @hover;
+
     }
-    &:active, &:focus {
+    &:active {
       color: @active;
     }
   }
