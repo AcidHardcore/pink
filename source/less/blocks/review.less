@@ -1,0 +1,132 @@
+.review {
+  position: relative;
+  text-align: center;
+  &__wrapper {
+    position: relative;
+    width: 275px;
+    margin: 0 auto;
+    margin-top: 50px;
+    .clearfix;
+    @media (min-width: @screen-sm) {
+      width: 620px;
+      margin-top: 80px;
+    }
+    @media (min-width: @screen-md) {
+      width: 700px;
+      margin-top: 70px;
+    }
+    @media (min-width: @screen-lg) {
+      margin-top: 75px;
+    }
+  }
+  &__quotes {
+    display: none;
+    @media (min-width: @screen-md) {
+      display: inline;
+      width: 79px;
+      height: 64px;
+      margin-bottom: 45px;
+
+      fill: #efefef;
+    }
+    @media (min-width: @screen-lg) {
+      margin-top: 75px;
+    }
+  }
+  &__item {
+    position: relative;
+    margin: auto 0;
+    @media (min-width: @screen-md) {
+      margin-top: 50px;
+    }
+  }
+  &__item-text {
+    //width: 280px;
+    margin: 30px auto 0;
+    font-size: 14px;
+    line-height: 1.875em;
+    color: @base-color;
+    @media (min-width: @screen-sm) {
+      margin-top: 0;
+      margin-bottom: 80px;
+      font-size: 18px;
+      line-height: 1.875em;
+    }
+  }
+  &__author-info {
+    display: none;
+    @media (min-width: @screen-sm) {
+      display: block;
+      line-height: 30px;
+    }
+    @media (min-width: @screen-md) {
+      font-size: 18px;
+      margin-bottom: 130px;
+    }
+  }
+  &__author-name {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 1.000;
+    @media (min-width: @screen-sm) {
+      position: absolute;
+      top: 145px;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      margin: auto;
+      font-size: 20px;
+      line-height: 30px;
+    }
+    @media (min-width: @screen-md) {
+      font-size: 24px;
+    }
+  }
+  &__prev-js {
+    position: absolute;
+    left: -15%;
+    top: 33%;
+    font-size: 0;
+    line-height: 0;
+    color: transparent;
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    @media (min-width: @screen-lg) {
+      top: 42%;
+    }
+  }
+  &__prev-js:before {
+    display: block;
+    width: 25px;
+    height: 25px;
+    content: '';
+    border-top: 3px solid #cccccc;
+    border-left: 3px solid #cccccc;
+    transform: rotate(-45deg);
+  }
+  &__next-js {
+    position: absolute;
+    right: -15%;
+    top: 33%;
+    font-size: 0;
+    line-height: 0;
+    color: transparent;
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    @media (min-width: @screen-lg) {
+      top: 42%;
+    }
+  }
+  &__next-js:before {
+    display: block;
+    width: 25px;
+    height: 25px;
+    content: '';
+    border-top: 3px solid #cccccc;
+    border-right: 3px solid #cccccc;
+    transform: rotate(45deg);
+  }
+}

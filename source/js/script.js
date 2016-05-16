@@ -19,9 +19,4 @@ button.addEventListener('tap', function (event) {
     header.classList.toggle('page-header--open-menu-js');
 
 });
-//hide menu on tap to close button
-/*close.addEventListener('tap', function (event) {
-    event.preventDefault();
-    popup.classList.add('');
-});*/
 

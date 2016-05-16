@@ -17,6 +17,7 @@
   ],
   "dependencies": {
     "normalize.css": "*",
-    "normalize.less": "^1.0.0"
+    "normalize.less": "^1.0.0",
+    "Peppermint": "^1.4.0"
   }
 }
