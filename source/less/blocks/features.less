@@ -1,10 +1,10 @@
 @import "../bootstrap/mixins.less";
 
 .features {
+  .clearfix();
+
   position: relative;
   text-align: center;
-
-  .clearfix();
 
   &__title {
     margin-top: 65px;
@@ -49,11 +49,11 @@
     }
   }
   &__wrapper {
+    .clearfix();
+
     padding-top: 55px;
     text-align: center;
     background-color: #f2f2f2;
-
-    .clearfix();
   }
   &__wrapper--second {
     padding-top: 0;
@@ -111,11 +111,11 @@
     }
   }
   &__link {
+    .links(@color-pink, @base-color, #f2f2f2);
+
     display: block;
     width: 275px;
     margin: 0 auto;
-
-    .links(@color-pink, @base-color, #f2f2f2);
     @media (min-width: @screen-md) {
       width: 300px;
       margin-right: 0;

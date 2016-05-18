@@ -34,7 +34,7 @@ butNext.addEventListener('tap', function (event) {
 //Create sliderPrice
 var sliderPrice = Peppermint(document.getElementById('sliderprice'), {
     dots: true,
-    slideshow: true,
+    slideshow: false,
     speed: 500,
     slideshowInterval: 5000,
     startSlide: 1,

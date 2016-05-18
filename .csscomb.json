@@ -21,6 +21,13 @@
   "vendor-prefix-align": true,
   "sort-order": [
     [
+      [ "$variable" ],
+      [ "$include" ],
+      [ "$include foo-mixin" ],
+      [ "top", "padding" ],
+      [ "$include bar-mixin" ]
+    ],
+    [
       "position",
       "top",
       "right",
