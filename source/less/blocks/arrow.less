@@ -5,7 +5,8 @@
   height: 36px;
   overflow: hidden;
   @media (min-width: @screen-sm) {
-    top: 292px;
+    top: 249px;
+    height: 55px;
   }
   @media (min-width: @screen-md) {
     top: 350px;
@@ -13,6 +14,13 @@
   }
   &--price {
     top: -36px;
+    @media (min-width: @screen-sm) {
+      top: -55px;
+    }
+    @media (min-width: @screen-md) {
+      top: -85px;
+      height: 100px;
+    }
   }
   &__left {
     position: absolute;
@@ -22,6 +30,10 @@
     height: 0;
     border-bottom: 36px solid #f2f2f2;
     border-left: 700px solid transparent;
+    @media (min-width: @screen-sm) {
+      border-bottom: 55px solid #f2f2f2;
+      border-left: 1250px solid transparent;
+    }
     @media (min-width: @screen-md) {
       border-bottom: 85px solid #f2f2f2;
       border-left: 1500px solid transparent;
