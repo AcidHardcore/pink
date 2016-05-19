@@ -13,7 +13,7 @@
 
   &-active &-slides {
     position: relative;
-    //overflow: hidden; /* clearfix */
+    overflow: hidden; /* clearfix */
     -ms-touch-action: pan-y;
         touch-action: pan-y;
   }
@@ -140,7 +140,8 @@
   }
 
   ul&-dots > li&-mouse-clicked,
-  ul&-dots > li:active {
+  ul&-dots > li:active,
+  ul&-dots > li:focus {
     outline: 0;
   }
 
