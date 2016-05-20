@@ -1,0 +1,123 @@
+.page-footer
+{
+  text-align: center;
+  @media (min-width: @screen-sm)
+  {
+    display: flex;
+    flex-direction: row;
+
+    height: 120px;
+
+    -js-display: flex;
+    align-items: center;
+  }
+
+  &__hash-tag
+  {
+    display: block;
+
+    padding-top: 30px;
+    padding-bottom: 40px;
+
+    color: #000;
+
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 26px;
+    @media (min-width: @screen-sm)
+    {
+      padding: 0;
+
+      flex-basis: 33%;
+    }
+  }
+  &__social
+  {
+    padding-bottom: 40px;
+    @media (min-width: @screen-sm)
+    {
+      padding: 0;
+
+      flex-basis: 33%;
+    }
+  }
+  &__links:hover
+  {
+    background-color: #669ec0;
+  }
+  &__links:active
+  {
+    background-color: #5496bd;
+  }
+  &__links:last-child
+  {
+    margin-right: 0;
+  }
+  &__links
+  {
+    position: relative;
+
+    display: inline-block;
+
+    width: 46px;
+    height: 48px;
+    margin-right: 6px;
+
+    vertical-align: top;
+    text-decoration: none;
+
+    background-color: @base-color;
+
+    font-size: 0;
+  }
+
+  &__links-tw
+  {
+    position: absolute;
+    top: 15px;
+    left: 14px;
+
+    width: 18px;
+    height: 15px;
+
+    fill: #fff;
+  }
+
+  &__links-fb
+  {
+    position: absolute;
+    top: 11px;
+    left: 18px;
+
+    width: 9px;
+    height: 19px;
+
+    fill: #fff;
+  }
+
+  &__links-yt
+  {
+    position: absolute;
+    top: 15px;
+    left: 13px;
+
+    width: 20px;
+    height: 14px;
+
+    fill: #fff;
+  }
+  &__copyright
+  {
+    padding-bottom: 25px;
+    @media (min-width: @screen-sm)
+    {
+      padding: 0;
+
+      flex-basis: 33%;
+    }
+  }
+  &__links:active svg
+  {
+    fill: #88b6d1;
+  }
+}
