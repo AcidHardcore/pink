@@ -1,0 +1,85 @@
+.contacts {
+  position: relative;
+  width: 100%;
+  &__wrapper {
+    .clearfix;
+
+    padding-top: 45px;
+    padding-bottom: 45px;
+    text-align: center;
+    @media (min-width: @screen-sm) {
+      padding-top: 55px;
+      padding-bottom: 30px;
+    }
+    @media (min-width: @screen-md) {
+      padding-top: 80px;
+      padding-bottom: 0;
+    }
+  }
+  &__head {
+    padding-bottom: 45px;
+    //width: 250px;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 30px;
+    color: @base-color;
+    @media (min-width: @screen-sm) {
+      font-size: 40px;
+      line-height: 1.2;
+      padding-bottom: 55px;
+    }
+    @media (min-width: @screen-sm) {
+      font-size: 50px;
+      line-height: 1.2;
+      padding-bottom: 70px;
+    }
+  }
+  &__head-span-1,
+  &__head-span-2 {
+    display: block;
+    margin: 0 auto;
+  }
+  &__wrapper-item {
+    width: 275px;
+    padding-bottom: 30px;
+    margin: 0 auto;
+    @media (min-width: @screen-sm) {
+      width: 530px;
+    }
+    @media (min-width: @screen-sm) {
+      width: 850px;
+    }
+  }
+  &__item {
+    margin-bottom: 30px;
+    @media (min-width: @screen-sm) {
+      margin-bottom: 55px;
+    }
+    //@media (min-width: @screen-md) {
+    //  width: 350px;
+    //}
+
+  }
+  &__item:last-child {
+    margin-bottom: 0;
+  }
+  &__span-1 {
+    display: block;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 30px;
+    color: @base-color;
+  }
+  &__span-2 {
+    display: block;
+    //padding-bottom: 30px;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 30px;
+    color: @color-pink;
+    @media (min-width: @screen-sm) {
+      width: 290px;
+      margin: 0 auto;
+    }
+  }
+}

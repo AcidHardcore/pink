@@ -3,6 +3,7 @@
   top: 262px;
   width: 100%;
   height: 36px;
+  margin: 0;
   overflow: hidden;
   @media (min-width: @screen-sm) {
     top: 249px;
@@ -22,11 +23,44 @@
       height: 100px;
     }
   }
+  &--contacts-1 {
+    top: auto;
+    right: 0;
+    bottom: -36px;
+    width: 50%;
+    @media (min-width: @screen-sm) {
+      top: auto;
+      bottom: -70px;
+      height: 70px;
+    }
+    @media (min-width: @screen-md) {
+      top: auto;
+      bottom: -120px;
+      height: 120px;
+    }
+  }
+  &--contacts-2 {
+    top: auto;
+    right: auto;
+    bottom: -36px;
+    left: 0;
+    width: 50%;
+    @media (min-width: @screen-sm) {
+      top: auto;
+      bottom: -70px;
+      height: 70px;
+    }
+    @media (min-width: @screen-md) {
+      top: auto;
+      bottom: -120px;
+      height: 120px;
+    }
+  }
   &__left {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 0;
     height: 0;
     border-bottom: 36px solid #f2f2f2;
     border-left: 700px solid transparent;
@@ -37,6 +71,44 @@
     @media (min-width: @screen-md) {
       border-bottom: 85px solid #f2f2f2;
       border-left: 1500px solid transparent;
+    }
+
+  }
+  &__left--contacts {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-right: 700px solid #fff;
+    border-bottom: 66px solid transparent;
+    border-left: 0;
+    @media (min-width: @screen-sm) {
+      border-right: 1250px solid #fff;
+      border-bottom: 99px solid transparent;
+      border-left: 0;
+    }
+    @media (min-width: @screen-md) {
+      border-right: 1500px solid #fff;
+      border-bottom: 120px solid transparent;
+      border-left: 0;
+    }
+  }
+  &__right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 66px solid transparent;
+    border-left: 700px solid #fff;
+    @media (min-width: @screen-sm) {
+      border-bottom: 99px solid transparent;
+      border-left: 1250px solid #fff;
+    }
+    @media (min-width: @screen-md) {
+      border-bottom: 120px solid transparent;
+      border-left: 1500px solid #fff;
     }
   }
 }
