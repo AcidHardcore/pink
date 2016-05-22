@@ -6,9 +6,13 @@ var cross = document.querySelector('.page-header__cross');
 var popup = document.querySelector('.page-nav');
 var header = document.querySelector('.page-header');
 
+var map = document.querySelector('.map');
+var frame = document.querySelector('.map__iframe');
+
 //menu and form hide on load page
 window.onload = function () {
     popup.classList.add('page-nav--close-js');
+    header.classList.add('page-header--fixed-js')
 };
 //show menu on tap to burger
 button.addEventListener('tap', function (event) {
@@ -18,5 +22,15 @@ button.addEventListener('tap', function (event) {
     popup.classList.toggle('page-nav--close-js');
     header.classList.toggle('page-header--open-menu-js');
 
+});
+//to prevent accidentally move  on a map
+map.addEventListener('tap', function (event) {
+   event.preventDefault();
+    frame.classList.add('map__iframe-js');
+});
+//when mouse leaves a map it will switch off
+map.addEventListener('mouseleave', function (event) {
+    event.preventDefault();
+    frame.classList.remove('map__iframe-js');
 });
 
